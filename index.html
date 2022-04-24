@@ -50,7 +50,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="hero-btn" type="button">Заказать услугу</button>
+                <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <!-- преимущества-->
@@ -111,13 +111,19 @@
                     <li class="about-item">
                         <img class="about-img" src="./images/what-are-we-doing-img1.jpg" alt="Печатает на клавиатуре"
                             width="370" height="294">
+                        <p class="about-text">Десктопные приложения</p>
                     </li>
                     <li class="about-item">
                         <img class="about-img" src="./images/what-are-we-doing-img2.jpg" alt="Печатает на клавиатуре"
                             width="370" height="294">
+                        <p class="about-text">Мобильные приложения</p>
                     </li>
                     <li class="about-item"><img class="about-img" src="./images/what-are-we-doing-img3.jpg"
-                            alt="Печатает на клавиатуре" width="370" height="294"></li>
+                            alt="Печатает на клавиатуре" width="370" height="294">
+                        <p class="about-text">Дизайнерские решения</p>
+
+                    </li>
+
                 </ul>
             </div>
         </section>
@@ -419,7 +425,17 @@
         </div>
     </footer>
 
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close" data-modal-close>
+                <svg class="modal-svg-close" width="11px" height="11px">
+                    <use href="./images/icons.svg#icon-Vector"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
 
+    <script src="/js/modal.js"></script>
 </body>
 
 </html>
