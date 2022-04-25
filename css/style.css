@@ -672,10 +672,8 @@ border-radius: 50%;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-item-second:hover .portfolio-text-hover{
-    transform: translateY(0);
-}
-.portfolio-item-second:focus .portfolio-text-hover{
+.portfolio-link:hover .portfolio-text-hover,
+.portfolio-link:focus .portfolio-text-hover{
     transform: translateY(0);
 }
 
